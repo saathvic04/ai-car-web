@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+            font-family: Arial, sans-serif; /* Added a common font for better cross-device consistency */
+        }
+        img {
+            width: 100%;
+            display: block; /* Ensures image does not have extra space below */
+        }
+        .button-container {
+            position: absolute;
+            top: 10px; /* Adjusted top position for better alignment */
+            left: 50%; /* Center button horizontally */
+            transform: translateX(-50%); /* Center button horizontally */
+            text-align: center; /* Center button text */
+            margin-top: 10px; /* Added margin for spacing */
+        }
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem; /* Adjusted font size for better readability */
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+        .button-container a:hover {
+            background-color: darkblue;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .button-container {
+                position: static; /* Reverts to normal flow for smaller screens */
+                margin-top: 10px; /* Added margin for spacing */
+                text-align: center; /* Center button text */
+            }
+            .button-container a {
+                font-size: 0.9rem; /* Adjusted font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://miro.medium.com/v2/resize:fit:1190/1*_F8ZU7PyY8DIbIh3oe-2vw.png" alt="">
+    <div class="button-container">
+        <a href="major-companies.html">Major Automotive Companies</a>
+    </div>
+</body>
+</html>
